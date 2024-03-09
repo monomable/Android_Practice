@@ -37,6 +37,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }
 
+/* 프리뷰
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
@@ -44,3 +45,4 @@ fun GreetingPreview() {
         Greeting("Android")
     }
 }
+*/
