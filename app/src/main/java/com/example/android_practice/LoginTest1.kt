@@ -4,10 +4,13 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -33,8 +36,8 @@ fun DividScreen2(){
     Surface()
     {
         Column(modifier = Modifier
-            .fillMaxSize()
-            .background(color = Color.Red),
+            .fillMaxSize(),
+            //.background(color = Color.Red),
             horizontalAlignment = Alignment.CenterHorizontally)  // 중앙정렬
         {
             Box(modifier = Modifier
@@ -47,19 +50,48 @@ fun DividScreen2(){
                     //.weight(0.5f) //높이
                     .background(color = Color.Yellow)
             )
+            Box(modifier = Modifier
+                .weight(1.5f)//높이
+            )
+            Row(modifier = Modifier,
+                horizontalArrangement = Arrangement.spacedBy(30.dp),
+                verticalAlignment = Alignment.CenterVertically,
+            )
+            {
+                Box(
+                    modifier = Modifier.background(Color.LightGray)
+                ) {
+                    Text(text = "kakao",fontSize = 20.sp)
+                }
+                Box(
+                    modifier = Modifier.background(Color.LightGray)
+                ) {
+                    Text(text = "google",fontSize = 20.sp)
+                }
+                Box(
+                    modifier = Modifier.background(Color.LightGray)
+                ) {
+                    Text(text = "facebook",fontSize = 20.sp)
+                }
+                Box(
+                    modifier = Modifier.background(Color.LightGray)
+                ) {
+                    Text(text = "Naver",fontSize = 20.sp)
+                }
+            }
 
+            /*
             Text(text = "Green Box",
                 modifier = Modifier
-                    .weight(1f) //높이
-                    .background(color = Color.Green)
-            )
+                    //.background(color = Color.Green)
+            )*/
 
             Box(modifier = Modifier
-                .width(80.dp)
+                //.width(80.dp)
                 .weight(0.5f) //높이
-                .background(color = Color.Cyan)
+                //.background(color = Color.Cyan)
             ) {
-                Text(text = "Cyan Box")
+                //Text(text = "Cyan Box")
             }
 
         }
