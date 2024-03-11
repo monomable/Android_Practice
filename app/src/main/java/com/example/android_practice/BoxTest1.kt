@@ -67,24 +67,39 @@ fun DividScreen(){
             .background(color = Color.Red),
             horizontalAlignment = Alignment.CenterHorizontally)  // 중앙정렬
         {
-
             Box(modifier = Modifier
                 .width(100.dp)
                 .background(color = Color.Gray))
             {
-                Text(text = "First Item")
+                Text(text = "Gray Box")
             }
 
-            Text(text = "First Item",
+            Box(modifier = Modifier
+                .width(80.dp)
+                .weight(0.3f) //높이
+                .background(color = Color.Cyan))
+            {
+                Text(text = "Cyan Box")
+            }
+
+            Text(text = "Yellow Box",
                 modifier = Modifier
                     .weight(0.5f) //높이
                     .background(color = Color.Yellow)
             )
 
-            Text(text = "Second Item",
+            Text(text = "Green Box",
                 modifier = Modifier
                     .weight(1f) //높이
                     .background(color = Color.Green))
+
+            Box(modifier = Modifier
+                .width(80.dp)
+                .weight(0.5f) //높이
+                .background(color = Color.Cyan))
+            {
+                Text(text = "Cyan Box")
+            }
 
         }
     }
