@@ -9,6 +9,9 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.wrapContentSize
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -42,21 +45,22 @@ fun DividScreen2(){
                 .weight(0.5f)//높이
             )
 
-            Text(text = "알찬 쇼핑",
+            Text(text = "R찬쇼핑",
                 fontSize = 60.sp,
                 modifier = Modifier
                     //.weight(0.5f) //높이
-                    //.background(color = Color.Yellow)
+                    //.background(color = Color(0xFFff8a8a))
             )
+
             Box(modifier = Modifier
                 .weight(1.5f)//높이
             )
             Row(modifier = Modifier,
-                horizontalArrangement = Arrangement.spacedBy(30.dp),
+                horizontalArrangement = Arrangement.spacedBy(10.dp),
                 verticalAlignment = Alignment.CenterVertically,
             )
             {
-                Box(
+                /*Box(
                     modifier = Modifier.background(Color.LightGray)
                 ) {
                     Text(text = "kakao",fontSize = 20.sp)
@@ -71,10 +75,40 @@ fun DividScreen2(){
                 ) {
                     Text(text = "facebook",fontSize = 20.sp)
                 }
+
                 Box(
                     modifier = Modifier.background(Color.LightGray)
                 ) {
                     Text(text = "Naver",fontSize = 20.sp)
+                }*/
+                Button(
+                    onClick = { /*TODO*/ },
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFff8a8a), contentColor = Color.White),
+                    modifier = Modifier.wrapContentSize()
+                ) {
+                    Text(text = "kakao",fontSize = 10.sp)
+                }
+                Button(
+                    onClick = { /*TODO*/ },
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFff8a8a), contentColor = Color.White),
+                    modifier = Modifier.wrapContentSize()
+                ) {
+                    Text(text = "google",fontSize = 10.sp)
+                }
+                Button(
+                    onClick = { /*TODO*/ },
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFff8a8a), contentColor = Color.White),
+                    modifier = Modifier.wrapContentSize()
+                ) {
+                    Text(text = "facebook",fontSize = 10.sp)
+                }
+
+                Button(
+                    onClick = { /*TODO*/ },
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFff8a8a), contentColor = Color.White),
+                    modifier = Modifier.wrapContentSize()
+                ) {
+                    Text(text = "Naver",fontSize = 10.sp)
                 }
             }
 
