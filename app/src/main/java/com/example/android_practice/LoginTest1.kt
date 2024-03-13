@@ -39,14 +39,14 @@ fun DividScreen2(){
             horizontalAlignment = Alignment.CenterHorizontally)  // 중앙정렬
         {
             Box(modifier = Modifier
-                .weight(0.3f)//높이
+                .weight(0.5f)//높이
             )
 
             Text(text = "알찬 쇼핑",
                 fontSize = 60.sp,
                 modifier = Modifier
                     //.weight(0.5f) //높이
-                    .background(color = Color.Yellow)
+                    //.background(color = Color.Yellow)
             )
             Box(modifier = Modifier
                 .weight(1.5f)//높이
