@@ -130,9 +130,11 @@ fun DividScreen2(){
     }
 }
 
+/*
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     // 프리뷰 부분
     DividScreen2()
 }
+*/
