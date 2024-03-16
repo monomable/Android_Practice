@@ -54,34 +54,7 @@ fun InformScreen(){
                     verticalAlignment = Alignment.CenterVertically,
                 )
                 {
-                    Button(
-                        onClick = { /*TODO*/ },
-                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFff8a8a), contentColor = Color.White),
-                        modifier = Modifier.wrapContentSize()
-                    ) {
-                        Text(text = "Naver",fontSize = 10.sp)
-                    }
-                    Button(
-                        onClick = { /*TODO*/ },
-                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFff8a8a), contentColor = Color.White),
-                        modifier = Modifier.wrapContentSize()
-                    ) {
-                        Text(text = "Naver",fontSize = 10.sp)
-                    }
-                    Button(
-                        onClick = { /*TODO*/ },
-                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFff8a8a), contentColor = Color.White),
-                        modifier = Modifier.wrapContentSize()
-                    ) {
-                        Text(text = "Naver",fontSize = 10.sp)
-                    }
-                    Button(
-                        onClick = { /*TODO*/ },
-                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFff8a8a), contentColor = Color.White),
-                        modifier = Modifier.wrapContentSize()
-                    ) {
-                        Text(text = "Naver",fontSize = 10.sp)
-                    }
+                    InformMenuButton()
                 }
             }
             Box(modifier = Modifier
@@ -98,6 +71,39 @@ fun InformScreen(){
         }
     }
 }
+
+@Composable
+fun InformMenuButton() {
+    Button(
+        onClick = { /*TODO*/ },
+        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFff8a8a), contentColor = Color.White),
+        modifier = Modifier.wrapContentSize()
+    ) {
+        Text(text = "Naver",fontSize = 10.sp)
+    }
+    Button(
+        onClick = { /*TODO*/ },
+        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFff8a8a), contentColor = Color.White),
+        modifier = Modifier.wrapContentSize()
+    ) {
+        Text(text = "Naver",fontSize = 10.sp)
+    }
+    Button(
+        onClick = { /*TODO*/ },
+        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFff8a8a), contentColor = Color.White),
+        modifier = Modifier.wrapContentSize()
+    ) {
+        Text(text = "Naver",fontSize = 10.sp)
+    }
+    Button(
+        onClick = { /*TODO*/ },
+        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFff8a8a), contentColor = Color.White),
+        modifier = Modifier.wrapContentSize()
+    ) {
+        Text(text = "Naver",fontSize = 10.sp)
+    }
+}
+
 
 @Preview(showBackground = true)
 @Composable
