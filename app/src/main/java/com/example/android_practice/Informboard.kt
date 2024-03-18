@@ -104,10 +104,11 @@ fun InformMenuButton() {
     }
 }
 
-
+/*
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     InformScreen()
     // 프리뷰 부분
 }
+*/

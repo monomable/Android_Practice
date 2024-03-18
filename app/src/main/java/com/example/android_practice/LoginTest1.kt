@@ -26,7 +26,7 @@ class LoginTest1 : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-
+            DividScreen2()
             // 컨텐츠 출력 부분
         }
     }
@@ -130,11 +130,10 @@ fun DividScreen2(){
     }
 }
 
-/*
+
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     // 프리뷰 부분
     DividScreen2()
 }
-*/
