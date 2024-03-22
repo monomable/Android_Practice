@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Android_Practice</string>
+    <string name="first_fragment">First</string>
+    <string name="second_fragment">Second</string>
+    <string name="button">NEXT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

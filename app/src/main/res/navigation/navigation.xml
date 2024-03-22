@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/loginTest1">
+    app:startDestination="@id/firstFragment2">
 
-    <activity
-        android:id="@+id/loginTest1"
-        android:name="com.example.android_practice.LoginTest1"
-        android:label="LoginTest1" />
-    <activity
-        android:id="@+id/informboard"
-        android:name="com.example.android_practice.Informboard"
-        android:label="Informboard" />
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.android_practice.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+    <fragment
+        android:id="@+id/firstFragment2"
+        android:name="com.example.android_practice.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" />
 </navigation>
