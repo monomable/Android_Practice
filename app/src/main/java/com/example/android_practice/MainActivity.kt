@@ -1,5 +1,20 @@
 package com.example.android_practice
 
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import androidx.navigation.fragment.NavHostFragment
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.fragment_first)
+
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.main_container) as NavHostFragment
+        val navController = navHostFragment.navController
+    }
+}
+
+/*
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -9,6 +24,8 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,7 +49,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         modifier = modifier
     )
 }
-
+*/
 /* 프리뷰
 @Preview(showBackground = true)
 @Composable
